@@ -35,6 +35,7 @@ public class AuthorServiceImpl implements AuthorService {
                             .id(book.getId())
                             .build()
                     ).toList();
+
             return AuthorDTO.builder()
                     .books(bookDtoList)
                     .id(author.getId())
