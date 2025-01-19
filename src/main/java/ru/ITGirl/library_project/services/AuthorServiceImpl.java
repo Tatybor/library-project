@@ -13,10 +13,14 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-
 public class AuthorServiceImpl implements AuthorService {
 
-    private  final AuthorRepository authorRepository;
+    private final AuthorRepository authorRepository;
+    public Author addNewAuthor;
+
+    public Author addNewAuthor (Author author){
+        return authorRepository.save(author);
+    }
 
     @Override
     public AuthorDTO getAuthorById (Long id){

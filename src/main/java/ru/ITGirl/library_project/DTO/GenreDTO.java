@@ -1,18 +1,18 @@
 package ru.ITGirl.library_project.DTO;
 
-import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
 @Builder
-public class BookDTO {
+public class GenreDTO {
 
     private Long id;
     private String name;
-    private String genre;               //genre changed to String
-
 }
 
 

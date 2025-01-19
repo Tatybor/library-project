@@ -8,4 +8,5 @@
  <include file="db/changelog/changes/create_table_genre.xml"/>
  <include file="db/changelog/changes/create_table_books.xml"/>
  <include file="db/changelog/changes/create_table_author_book.xml"/>
+ <include file="db/changelog/changes/insert_into_table_author_book.xml"/>
 </databaseChangeLog>
